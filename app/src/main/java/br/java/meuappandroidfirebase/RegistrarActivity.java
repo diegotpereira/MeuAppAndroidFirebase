@@ -65,7 +65,7 @@ public class RegistrarActivity extends AppCompatActivity {
                         String userID = user.getUid();
                         String email = user.getEmail();
 
-                        DadosUsuario newUserProData = new DadosUsuario("", "", "", "", "Por favor digite seu nome");
+                        DadosUsuario newUserProData = new DadosUsuario("", "", "Por favor digite seu nome", "", "");
                         myRef.child("users").child(userID).setValue(newUserProData);
                         myRef.child("users").child(userID).child("email").setValue(email);
 
