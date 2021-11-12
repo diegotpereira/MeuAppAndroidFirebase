@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".RegistrarActivity">
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
@@ -13,39 +13,33 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:backgroundTint="#123123"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
 
         <EditText
-            android:id="@+id/txtEmailLogin"
+            android:id="@+id/txtEmailRegister"
             android:layout_width="wrap_content"
-            android:layout_height="46dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="26dp"
             android:layout_marginTop="151dp"
             android:layout_marginEnd="26dp"
-            android:background="@drawable/edittext_bg"
             android:ems="10"
-            android:fontFamily="sans-serif"
-            android:inputType="textEmailAddress"
-            android:textStyle="bold" />
+            android:inputType="textEmailAddress" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/txtView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginStart="29dp"
+            android:layout_marginStart="28dp"
             android:layout_marginTop="122dp"
             android:text="Email"
-            android:textColor="#A9A9A9"
-            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView
@@ -56,30 +50,24 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="28dp"
             android:layout_marginTop="218dp"
-            android:fontFamily="@font/fredoka_one"
-            android:text="Senha"
-            android:textColor="#A9A9A9"
-            android:textSize="18sp"
+            android:text="Password"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/txtPasswordLogin"
+            android:id="@+id/txtPasswordRegister"
             android:layout_width="wrap_content"
-            android:layout_height="46dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="26dp"
             android:layout_marginTop="256dp"
             android:layout_marginEnd="26dp"
-            android:background="@drawable/edittext_bg"
             android:ems="10"
-            android:fontFamily="sans-serif"
-            android:inputType="textPassword"
-            android:textStyle="bold" />
+            android:inputType="textPassword" />
 
         <Button
-            android:id="@+id/btnUserLogin"
+            android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -88,9 +76,9 @@
             android:layout_marginStart="45dp"
             android:layout_marginTop="439dp"
             android:layout_marginEnd="45dp"
-            android:background="@drawable/roundedbutton"
-            android:onClick="btnUsuarioEntrar_Clique"
-            android:text="Entrar"
+            android:background = "@drawable/roundedbuttoncolor1"
+            android:onClick="btnUsuarioRegistro_Clique"
+            android:text="Cadastre-se"
             android:textColor="#FFFFFF"
             android:textStyle="bold" />
 
